@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		97371D791E1492E8005F8269 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97371D781E1492E8005F8269 /* AppDelegate.swift */; };
-		97371D7B1E1492E8005F8269 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97371D7A1E1492E8005F8269 /* ViewController.swift */; };
 		97371D7E1E1492E8005F8269 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97371D7C1E1492E8005F8269 /* Main.storyboard */; };
 		97371D801E1492E8005F8269 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97371D7F1E1492E8005F8269 /* Assets.xcassets */; };
 		97371D831E1492E8005F8269 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97371D811E1492E8005F8269 /* LaunchScreen.storyboard */; };
+		97371D8B1E1493FF005F8269 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97371D8A1E1493FF005F8269 /* CollectionViewController.swift */; };
+		97371D8E1E149441005F8269 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97371D8D1E149441005F8269 /* CollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		97371D751E1492E8005F8269 /* CollectionViews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollectionViews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97371D781E1492E8005F8269 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		97371D7A1E1492E8005F8269 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		97371D7D1E1492E8005F8269 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		97371D7F1E1492E8005F8269 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		97371D821E1492E8005F8269 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		97371D841E1492E8005F8269 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		97371D8A1E1493FF005F8269 /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		97371D8D1E149441005F8269 /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,23 @@
 		97371D771E1492E8005F8269 /* CollectionViews */ = {
 			isa = PBXGroup;
 			children = (
+				97371D8C1E149404005F8269 /* ViewControllers */,
 				97371D781E1492E8005F8269 /* AppDelegate.swift */,
-				97371D7A1E1492E8005F8269 /* ViewController.swift */,
 				97371D7C1E1492E8005F8269 /* Main.storyboard */,
 				97371D7F1E1492E8005F8269 /* Assets.xcassets */,
 				97371D811E1492E8005F8269 /* LaunchScreen.storyboard */,
 				97371D841E1492E8005F8269 /* Info.plist */,
 			);
 			path = CollectionViews;
+			sourceTree = "<group>";
+		};
+		97371D8C1E149404005F8269 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				97371D8A1E1493FF005F8269 /* CollectionViewController.swift */,
+				97371D8D1E149441005F8269 /* CollectionViewCell.swift */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +148,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				97371D7B1E1492E8005F8269 /* ViewController.swift in Sources */,
+				97371D8B1E1493FF005F8269 /* CollectionViewController.swift in Sources */,
 				97371D791E1492E8005F8269 /* AppDelegate.swift in Sources */,
+				97371D8E1E149441005F8269 /* CollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,6 +277,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Com.JayP.CollectionViews;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -278,6 +291,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Com.JayP.CollectionViews;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -300,6 +314,7 @@
 				97371D891E1492E8005F8269 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
